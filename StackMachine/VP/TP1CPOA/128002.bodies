@@ -1,56 +1,5 @@
-
-package fr.iutvalence.info.m3105.stackmachine;
-
-import java.io.IOException;
-public class CPU {
-  public static final int HALT =  0x00;
-
-  public static final int PUSH =  0x01;
-
-  public static final int ADD =  0x02;
-
-  public static final int SUB =  0x03;
-
-  public static final int MUL =  0x04;
-
-  public static final int DIV =  0x05;
-
-  public static final int MOD =  0x06;
-
-  public static final int NEG =  0x07;
-
-  public static final int LT =  0x08;
-
-  public static final int LE =  0x09;
-
-  public static final int GT =  0x0A;
-
-  public static final int GE =  0x0B;
-
-  public static final int EQ =  0x0C;
-
-  public static final int NE =  0x0D;
-
-  public static final int IN =  0x0E;
-
-  public static final int OUT =  0x0F;
-
-  public static final int CALL =  0x10;
-
-  public static final int RET =  0x11;
-
-  public static final int JP =  0x12;
-
-  public static final int JZ =  0x13;
-
-  public static final int DUP =  0x14;
-
-  public static final int POP =  0x15;
-
-  /**
-   *  TODO something is missing here...
-   */
-  public void run() {
+class CPU
+!!!128002.java!!!	run() : void
 		try
 		{
 			while (true)
@@ -195,30 +144,3 @@ public class CPU {
 		{
 			// TODO something is missing here...
 		}		
-  }
-
-  public  wireToIoSubsystem(IO ioSystem) {
-  }
-
-  public  wireToCallStack( callStack) {
-  }
-
-  public  wireToExpStack( expStack) {
-  }
-
-  public  wireToProgramMemory( programMemory) {
-  }
-
-  public void write(Object opCode, int currentAdress) {
-  }
-
-  private IO ioSystem;
-
-  public void clearStacks() {
-  }
-
-  private IO ;
-
-  private IO ;
-
-}
