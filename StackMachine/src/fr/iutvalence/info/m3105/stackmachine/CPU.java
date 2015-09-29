@@ -32,6 +32,10 @@ public class CPU
 	public CPU(IO anIO){
 		this.ioSystem = anIO; 
 	}
+	
+	public CPU(){
+		this.ioSystem = new IO();
+	}
 
 	public void run()
 	{
