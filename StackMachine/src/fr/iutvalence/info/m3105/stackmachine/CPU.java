@@ -46,17 +46,25 @@ public class CPU {
   public static final int DUP =  0x14;
 
   public static final int POP =  0x15;
-
-  /**
-   *  TODO something is missing here...
-   */
+  
+  private IO ioSystem;
+  private Memory programmMemory;
+  private Stack expStack;
+  private Stack callStack;
+  
+  public CPU(){
+	  
+	  
+  }
+  
+  
   public void run() {
 		try
 		{
 			while (true)
 			{
 				// TODO something is missing here...
-
+				int opCode = expStack.takeElem();
 				// System.err.print("@" + this.programCounter + ": ");
 				switch (opCode)
 				{
@@ -197,28 +205,28 @@ public class CPU {
 		}		
   }
 
-  public  wireToIoSubsystem(IO ioSystem) {
+  public  void wireToIoSubsystem(IO ioSystem) {
   }
 
-  public  wireToCallStack( callStack) {
+  public  void wireToCallStack(Stack callStack) {
   }
 
-  public  wireToExpStack( expStack) {
+  public  void wireToExpStack(Stack expStack) {
   }
 
-  public  wireToProgramMemory( programMemory) {
+  public  void wireToProgramMemory(Memory programMemory) {
   }
 
   public void write(Object opCode, int currentAdress) {
   }
 
-  private IO ioSystem;
+ 
 
   public void clearStacks() {
   }
 
-  private IO ;
-
-  private IO ;
-
+public void setPC(int address) {
+	// TODO Auto-generated method stub
+	
+}
 }

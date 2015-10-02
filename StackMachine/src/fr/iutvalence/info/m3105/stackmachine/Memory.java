@@ -11,6 +11,10 @@ public class Memory {
 	public int getStartAddress() {
 		return this.startAddress;
 	}
+	
+	public int getEnAddress() {
+		return this.endAddress;
+	}
 
 	public void write(int currentAddress, Object opCode) {
 		// TODO Auto-generated method stub

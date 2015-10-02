@@ -2,8 +2,16 @@
 package fr.iutvalence.info.m3105.stackmachine;
 
 public class MachineLauncher {
+	
+	  private Machine machine;
+
+	  private Program program;
+
+	  
   public static void main(String[] args)
   {
+	  
+	  
 		/*
 		0x0: 		in	  		// read a value value from IO and push it to exp-stack
 		0x1: 		call 0x5	// call the subroutine at @ of label named "fact"
@@ -78,8 +86,5 @@ public class MachineLauncher {
 		machine.executeProgram(0x00000000);
   }
 
-  private Machine machine;
-
-  private Program program;
 
 }

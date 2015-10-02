@@ -39,6 +39,7 @@ public class Machine {
   public void executeProgram(int address) {
 		cpu.clearStacks();
 		cpu.setPC(address);
+		
 		cpu.run();
 		System.out.println("(end of program execution)");
   }
