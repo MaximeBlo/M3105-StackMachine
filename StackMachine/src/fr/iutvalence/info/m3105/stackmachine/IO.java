@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintStream;
-public class IO {
+public class IO implements IOInterface {
   private BufferedReader in;
 
   private PrintStream out;

@@ -1,0 +1,19 @@
+window_sizes 1280 962 300 900 682 82
+diagrams
+  active  classdiagram_ref 128002 // stackmachine
+    974 804 100 4 0 0
+end
+show_stereotypes
+selected attribute_ref 138754 // currentSize
+open
+  class_ref 128514 // Memory
+  class_ref 128642 // Instruction
+  class_ref 128770 // Program
+  class_ref 135426 // stackInterface
+  class_ref 135554 // stack
+  class_ref 135682 // CPUInterface
+  class_ref 135810 // IOInterface
+  class_ref 135938 // MemoryInterface
+  deploymentview_ref 128002 // stackmachine
+end
+end
